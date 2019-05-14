@@ -60,8 +60,8 @@
     <div class="col l12">
   <div class="carousel">
       <a class="carousel-item" href="indexCrudUsr.php"><img src="../img/users.png"><p align="center" color="black"><b>usuarios</b></p></a>
-      <a class="carousel-item" href="#"><img src="sitios.png"><p align="../img/center" color="black"><b>sitios</b></p></a>
-      <a class="carousel-item" href="#"><img src="reporte.png"><p align="../img/center" color="black"><b>reporte</b></p></a>
+      <a class="carousel-item" href="indexCrudAdm.php"><img src="../img/sitios.png"><p align="../img/center" color="black"><b>sitios</b></p></a>
+      <a class="carousel-item" href="#"><img src="../img/reporte.png"><p align="../img/center" color="black"><b>reporte</b></p></a>
   </div>
 </div>
 </div>

@@ -48,7 +48,8 @@
  </div>
 
   <div class="col-12" id="contenido">
-    <table style="margin: auto; width: 800px; border-collapse: separate; border-spacing: 10px 5px;">
+
+<table style="margin: auto; width: 800px; border-collapse: separate; border-spacing: 10px 5px;">
       <thead>
         <th style="color: blue">No</th>
         <th style="color: blue">Nombre</th>
@@ -79,6 +80,7 @@
 
       ?>
     </table>
+   
   </div>
 
 
