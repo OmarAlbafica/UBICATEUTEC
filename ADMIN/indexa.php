@@ -17,7 +17,9 @@
     </head>
 
 
-    <?php include("seguridad.php");
+    <?php 
+
+          include("seguridad.php");
           include("seguridadadmin.php");
        ?>
 
