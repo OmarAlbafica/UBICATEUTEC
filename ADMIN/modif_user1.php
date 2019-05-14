@@ -1,27 +1,5 @@
-<?php 
- 
- $consulta=ConsultarUsuario($_GET['idusurario']);
-
- function ConsultarUsuario($id_user){
-  include "../conexion.php";
-  $sentencia="SELECT * FROM usuario WHERE idusurario='".$id_user."'";
-  $resultado=$link->query($sentencia) or die("Error al consultar user".mysqli_Error());
-  $fila=$resultado->fetch_assoc();
-  return[
-    $fila['nombre'],
-    $fila['apellido'],
-    $fila['direccion'],
-    $fila['telefono'],
-    $fila['correo'],
-    $fila['user'],
-    $fila['pass'],
-    $fila['estado'],
-    $fila['tipo']
-  ];
-
- }
-
-
+<?php
+      require_once 'modif_user1PHP.php';
 ?>
 
 <!DOCTYPE html>
@@ -71,7 +49,7 @@
   		<br>
 	  <form action="modif_user2.php" method="POST" style="border-collapse: separate; border-spacing: 10px 5px;">
       <input type="hidden" name="idusurario" value="<?php echo $_GET['idusurario']?> ">
-    <label>Nombre: </label>
+    <label>Nombre: <?php echo $consulta[0]?></label>
       <input type="text" id="nombre" name="nombre"; value="<?php echo $consulta[0] ?>"><br>
       
       <label>Apellido: </label>

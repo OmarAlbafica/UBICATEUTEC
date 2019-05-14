@@ -1,3 +1,6 @@
+<?php
+
+?>
 <!DOCTYPE html>
   <html >
     <head>
@@ -41,7 +44,29 @@
       <!--JavaScript at end of body for optimized loading-->
       <script type="text/javascript" src="js/materialize.min.js"></script>
     <body >
-    
+  <div class="container section">
+  <div class="row">
+    <div class="col s12">
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">textsms</i>
+          <input type="text" id="autocomplete-input" class="autocomplete">
+          <label for="autocomplete-input">Buscar</label>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.autocomplete');
+    var instances = M.Autocomplete.init(elems, options);
+  });
+  </script>
+
+
 
  <div class="container" style="margin-top: 5%; width: 100%;" >
 
@@ -59,25 +84,11 @@
       </thead>
       
       
-      <?php
-      include "../conexion.php";
-      $sentencia="SELECT * FROM usuario";
-      $resultado=$link->query($sentencia) or die(mysqli_error($link));
-      while($fila=$resultado->fetch_assoc())
-      {
-        echo "<tr>";
-          echo "<td>"; echo $fila['idusurario']; echo "</td>";
-          echo "<td>"; echo $fila['nombre']; echo "</td>";
-          echo "<td>"; echo $fila['apellido']; echo "</td>";
-          echo "<td>"; echo $fila['user']; echo "</td>";
-          echo "<td>"; echo $fila['telefono']; echo "</td>";
-    
-          echo "<td>  <a href='modif_user1.php?idusurario=".$fila['idusurario']."'> <button type='button' class='btn btn-succes'>Modificar</button></a></td>";
-          echo "<td>  <a href='eliminar_user.php?idusurario=".$fila['idusurario']."'> <button type='button' class='btn btn-danger'>Eliminar</button></a></td>";
-        echo "</tr>";
-      }
+<?php
+      
+      require_once 'indexCrudUsrPHP.php';
 
-      ?>
+?>
     </table>
   </div>
 
@@ -85,7 +96,7 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     </body>
-
+<?php require_once 'footer.php'; ?>
    
   </html>
         
