@@ -45,7 +45,7 @@ if ($resultado = $link2->query($sql2)) {
       header ("Location: ADMIN/indexa.php");
       }else{
         $_SESSION["tipo"] = $tipo;
-      header ("Location: /COLA/cola.php");
+      header ("Location: COLA/cola.php");
       
       }
      mysqli_free_result( $result );
