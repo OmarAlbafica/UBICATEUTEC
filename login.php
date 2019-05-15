@@ -33,6 +33,10 @@
 
         
 </style>
+
+<?php 
+session_start(); 
+session_destroy();  ?>
  <body>
 
 <div class="row login">
