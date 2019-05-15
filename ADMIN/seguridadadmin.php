@@ -7,7 +7,7 @@
 if($_SESSION["tipo"] != "ADMIN")
 { 
   //Si no hay sesión activa, lo direccionamos al index.php (inicio de sesión) 
-  header("Location: ../cola.php"); 
+  header("Location: ../COLA/cola.php"); 
   exit(); 
 }
 
