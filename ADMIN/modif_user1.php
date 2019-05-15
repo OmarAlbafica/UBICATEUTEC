@@ -39,12 +39,13 @@
 </script>
 
 <body>
-<div class="todo">
-  
+<div class="container">
+  <div class="row s12" style="margin-top: 20px">
 
   
-  <div id="contenido">
-  	<div style="margin: auto; width: 800px; border-collapse: separate; border-spacing: 10px 5px;">
+   	<table class="responsive-table striped" style="margin-top: 20px">
+
+      <thead>
   		<span> <h1>Modificar Datos de Usuario</h1> </span>
   		<br>
 	  <form action="modif_user2.php" method="POST" style="border-collapse: separate; border-spacing: 10px 5px;">
@@ -74,34 +75,25 @@
       <input type="text" id="estado" name="estado"; value="<?php echo $consulta[7] ?>"><br>
 
       <label>tipo: </label>
-      <input type="text" id="tipo" name="tipo"; value="<?php echo $consulta[8] ?>"><br>
-      <!--input type="radio" name="tipo" value="1">Administrador
-      <input type="radio" name="tipo" value="2" checked>Gerente
-      <br-->
-
-
-
-      <!--select >
-        <option><?php echo $consulta[8] ?></option>
-       <option name="tipo" value="volvo">Administrador</option>
-       <option name="tipo" value="saab">Gerente</option>
-      </select-->
-      
+      <input type="text" id="tipo" name="tipo"; value="<?php echo $consulta[8] ?>"><br>    
       
   		
   		<br>
   		<button type="submit" class="btn btn-success">Guardar</button>
      </form>
+   </thead>
+ </table>
   	</div>
   	
   </div>
   
 
 
-</div>
+
 
  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
 </body>
+<?php require_once 'footer.php'; ?>
  </html>

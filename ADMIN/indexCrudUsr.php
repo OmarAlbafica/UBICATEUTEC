@@ -68,19 +68,21 @@
 
 
 
- <div class="container" style="margin-top: 5%; width: 100%;" >
+ <div class="container" style="margin-top: -5%; width: 100%;" >
 
- </div>
-
-  <div class="col-12" id="contenido">
-    <table style="margin: auto; width: 800px; border-collapse: separate; border-spacing: 10px 5px;">
+ 
+  <div class="row" style="margin-top: 20px">
+  
+    <table class="responsive-table striped" style="margin-top: 20px">
       <thead>
+        
         <th style="color: blue">No</th>
         <th style="color: blue">Nombre</th>
         <th style="color: blue">Apellido</th>
         <th style="color: blue">User</th>
         <th style="color: blue">Teléfono</th>
         <th> <a href="nuevo_user1.php"> <button type="button" class="btn btn-info">Nuevo</button> </a> </th>
+      
       </thead>
       
       
@@ -90,8 +92,9 @@
 
 ?>
     </table>
+  
   </div>
-
+</div>
 
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>

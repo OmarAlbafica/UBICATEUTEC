@@ -34,10 +34,12 @@
       
 </script>
 <body>
-<div class="todo">
+<div class="container">
   
-  <div id="contenido">
-  	<div style="margin: auto; width: 800px; border-collapse: separate; border-spacing: 10px 5px;">
+  <div class="row s12" style="margin-top: 20px">
+
+  	<table class="responsive-table striped" style="margin-top: 20px">
+      <thead>
   		<span> <h1>Agregar Usuario</h1> </span>
   		<br>
 	  <form action="nuevo_user2.php" method="POST" style="border-collapse: separate; border-spacing: 10px 5px;" enctype="multipart/form-data">
@@ -72,11 +74,13 @@
    		<br>
   		<button type="submit" class="btn btn-success">Guardar</button>
      </form>
+   </thead>
+ </table>
   	</div>
   	
   </div>
   
-</div>
+
 
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

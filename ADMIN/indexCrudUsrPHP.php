@@ -4,6 +4,7 @@
       $resultado=$link->query($sentencia) or die(mysqli_error($link));
       while($fila=$resultado->fetch_assoc())
       {
+        
         echo "<tr>";
           echo "<td>"; echo $fila['idusurario']; echo "</td>";
           echo "<td>"; echo $fila['nombre']; echo "</td>";
@@ -15,6 +16,7 @@
           echo "<td>  <a href='eliminar_user.php?idusurario=".$fila['idusurario']."'> <button type='button' class='btn btn-danger'>Eliminar</button></a></td>";
           echo "<td>  <a href='verUSer.php?idusurario=".$fila['idusurario']."'> <button type='button' class='btn btn-danger'>Ver inf.</button></a></td>";
         echo "</tr>";
+
       }
 
       ?>
