@@ -45,7 +45,7 @@
 	  <form action="nuevo_user2.php" method="POST" style="border-collapse: separate; border-spacing: 10px 5px;" enctype="multipart/form-data">
       <input type="hidden" name="no">
   		<label>Nombre: </label>
-  		<input type="text" id="nombre" name="nombre"><br>
+  		<input type="text" id="nombre" name="nombre" required><br>
   		
   		<label>Apellido: </label>
   		<input type="text" id="apellido" name="apellido"><br>
@@ -65,14 +65,30 @@
   		<label>Password: </label>
   		<input type="text" id="pass" name="pass"><br>
 
-  		<label>estado: </label>
-  		<input type="text" id="estado" name="estado"><br>
-
   		<label>tipo: </label>
-  		<input type="text" id="tipo" name="tipo"><br>
+  		<!--input type="text" id="estado" name="estado"><br-->
+      <div class="row">
+        <div class="col s4">
+          <select class="browser-default" name="tipo" required>
+          <option disabled selected>SELECCION</option>
+          <option value="ADMIN">ADMIN</option>
+          <option value="COLA">COLABORADOR</option>
+      </select>
+        </div>
+      </div> 
+  		
+
+
+      <!--label>tipo: </label-->
+  		<input type="hidden" value="ACTIVO"  name="estado"><br>
   		
    		<br>
-  		<button type="submit" class="btn btn-success">Guardar</button>
+      <div>
+        <button type="submit" class="btn red">Guardar</button>
+        <a href="indexCrudUsr.php" class="btn">Cancelar</a>
+      </div>
+  		
+      
      </form>
    </thead>
  </table>

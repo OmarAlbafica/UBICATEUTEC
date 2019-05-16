@@ -72,14 +72,34 @@
       <input type="text" id="pass" name="pass"; value="<?php echo $consulta[6] ?>"><br>
 
       <label>estado: </label>
-      <input type="text" id="estado" name="estado"; value="<?php echo $consulta[7] ?>"><br>
+       <div class="row">
+        <div class="col s4">
+          <select class="browser-default" name="estado">
+          <option value="ACTIVO" <?php if ($consulta[7]=="ACTIVO") echo "selected"; ?> > ACTIVO</option>
+          <option value="INACTIVO" <?php if ($consulta[7]=="INACTIVO") echo "selected"; {
+          } ?>>INACTIVO</option>
+      </select>
+        </div>
+      </div> 
+      
 
       <label>tipo: </label>
-      <input type="text" id="tipo" name="tipo"; value="<?php echo $consulta[8] ?>"><br>    
+      <div class="row">
+        <div class="col s4">
+          <select class="browser-default" required name="tipo">
+          <option value="ADMIN" <?php if ($consulta[8]=="ADMIN") echo "selected"; ?>>ADMINISTRADOR</option>
+          <option value="COLA" <?php if ($consulta[8]=="COLA") echo "selected"; ?>>COLABORADOR</option>
+      </select>
+        </div>
+      </div> 
+          
       
   		
   		<br>
-  		<button type="submit" class="btn btn-success">Guardar</button>
+  		  <div>
+        <button type="submit" class="btn red">Guardar</button>
+        <a href="indexCrudUsr.php" class="btn">Cancelar</a>
+      </div>
      </form>
    </thead>
  </table>

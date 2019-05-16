@@ -41,6 +41,7 @@
         shift:20,
         padding: 90,
         noWrap:false,
+        indicators:true,
       }
             
 
@@ -62,54 +63,41 @@
       <h4>Bienvenid@</h4>
       <div class="divider"></div>
     <div class="carousel" >
-  <div class="carousel-item">
   
-    <div class="card large">
-    <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator" src="../img/users.png">
-    </div>
-    <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4">Usuarios<i class="material-icons right">more_vert</i></span>
-      <p><a href="indexCrudUsrCola.php">Usuarios</a></p>
-    </div>
-    <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-      <p>Here is some more information about this product that is only revealed once clicked on.</p>
-    </div>
-  </div>
-    </div>
- 
 <div class="carousel-item">
       <div class="card large">
-    <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator" src="../img/sitios.png">
-    </div>
-    <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4">Sitios<i class="material-icons right">more_vert</i></span>
-      <p><a href="#">Sitios</a></p>
-    </div>
-    <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">Sitios<i class="material-icons right">close</i></span>
-      <p>Here is some more information about this product that is only revealed once clicked on.</p>
-    </div>
-  </div>
-    </div>
-    <div class="carousel-item">
-      <div class="card large">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="../img/sitios.png">
+        </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Sitios<i class="material-icons right">more_vert</i></span>
+              <p><a href="#">Sitios</a></p>
+          </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Sitios<i class="material-icons right">close</i></span>
+                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+            </div>
+      </div>
+</div>
+
+<div class="carousel-item">
+  <div class="card large">
     <div class="card-image waves-effect waves-block waves-light">
       <img class="activator" src="../img/reporte.png">
     </div>
-    <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4">Reportes<i class="material-icons right">more_vert</i></span>
-      <dir><p><a href="#">Reportes</a></p></dir>
-    </div>
-    <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">Reportes<i class="material-icons right">close</i></span>
-      <p>Here is some more information about this product that is only revealed once clicked on.</p>
-    </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">Reportes<i class="material-icons right">more_vert</i></span>
+            <dir><p><a href="#">Reportes</a></p></dir>
+        </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Reportes<i class="material-icons right">close</i></span>
+              <p>Here is some more information about this product that is only revealed once clicked on.</p>
+          </div>
   </div>
-  </div>
-  </div>
+</div>
+
+
+</div>
 </div>
 </div>
 <div class="divider"></div>
