@@ -13,7 +13,7 @@
   </nav>
 
   <ul class="sidenav pink darken-4  white-text text-darken-4" id="mobile-demo">
-        <li ><a class="white-text text-darken-4" href="../indexa.php"><i class="material-icons Small  white-text text-darken-4">home</i>Inicio</a></li>
+        <li ><a class="white-text text-darken-4" href="indexa.php"><i class="material-icons Small  white-text text-darken-4">home</i>Inicio</a></li>
         <li><a class="white-text text-darken-4" href="indexCrudUsr.php"><i class="material-icons right white-text text-darken-4">person</i>Usuarios</a></li>
         <li><a  class="white-text text-darken-4" href="lugares.php"><i class="material-icons right white-text text-darken-4">place</i>Lugares</a></li>
         <li><a class="white-text text-darken-4" href="reporte.php"><i class="material-icons right white-text text-darken-4">assignment</i>Reporte</a></li-->

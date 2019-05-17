@@ -4,7 +4,7 @@
 
 	function NuevoUser($nom, $ape, $dir, $tel, $correo, $user, $pass, $estado, $tipo){
 		include "../conexion.php";
-			$sentencia = "INSERT INTO usuario (nombre, apellido, direccion, telefono, correo, user, pass, estado, tipo) VALUES ('".$nom."', '".$ape."', '".$dir."', '".$tel."', '".$correo."', '".$user."', '".$pass."','".$estado."', '".$tipo."')" ;
+			$sentencia = "INSERT INTO usuario (nombre, apellido, direccion, telefono, correo, user, pass, estado, tipo, fecha_creacion) VALUES ('".$nom."', '".$ape."', '".$dir."', '".$tel."', '".$correo."', '".$user."', '".$pass."','".$estado."', '".$tipo."', NOW())" ;
 			$link->query($sentencia) or die("Error al ingresar los datos".mysqli_error($link));
 	}
 
