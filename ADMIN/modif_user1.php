@@ -51,30 +51,30 @@
 	  <form action="modif_user2.php" method="POST" style="border-collapse: separate; border-spacing: 10px 5px;">
       <input type="hidden" name="idusurario" value="<?php echo $_GET['idusurario']?> ">
     <label>Nombre: <?php echo $consulta[0]?></label>
-      <input type="text" id="nombre" name="nombre"; value="<?php echo $consulta[0] ?>"><br>
+      <input type="text" id="nombre" name="nombre" required=""; value="<?php echo $consulta[0] ?>"><br>
       
       <label>Apellido: </label>
-      <input type="text" id="apellido" name="apellido"; value="<?php echo $consulta[1] ?>"><br>
+      <input type="text" id="apellido" name="apellido" required=""; value="<?php echo $consulta[1] ?>"><br>
       
       <label>Dirección: </label>
-      <input type="text" id="direccion" name="direccion"; value="<?php echo $consulta[2] ?>"><br>
+      <input type="text" id="direccion" name="direccion" required=""; value="<?php echo $consulta[2] ?>"><br>
 
       <label>Teléfono: </label>
       <input type="tel" id="telefono" name="telefono" pattern="[0-9]{4}-[0-9]{4}"; value="<?php echo $consulta[3] ?>"><br>
 
       <label>Correo: </label>
-      <input type="text" id="correo" name="correo"; value="<?php echo $consulta[4] ?>"><br>
+      <input type="text" id="correo" name="correo" required=""; value="<?php echo $consulta[4] ?>"><br>
 
       <label>User: </label>
-      <input type="text" id="user" name="user"; value="<?php echo $consulta[5] ?>"><br>
+      <input type="text" id="user" name="user" required=""; value="<?php echo $consulta[5] ?>"><br>
 
       <label>Password: </label>
-      <input type="text" id="pass" name="pass"; value="<?php echo $consulta[6] ?>"><br>
+      <input type="text" id="pass" name="pass" required=""; value="<?php echo $consulta[6] ?>"><br>
 
       <label>estado: </label>
        <div class="row">
         <div class="col s4">
-          <select class="browser-default" name="estado">
+          <select class="browser-default" name="estado" required="">
           <option value="ACTIVO" <?php if ($consulta[7]=="ACTIVO") echo "selected"; ?> > ACTIVO</option>
           <option value="INACTIVO" <?php if ($consulta[7]=="INACTIVO") echo "selected"; {
           } ?>>INACTIVO</option>
@@ -86,7 +86,7 @@
       <label>tipo: </label>
       <div class="row">
         <div class="col s4">
-          <select class="browser-default" required name="tipo">
+          <select class="browser-default" required name="tipo" required="">
           <option value="ADMIN" <?php if ($consulta[8]=="ADMIN") echo "selected"; ?>>ADMINISTRADOR</option>
           <option value="COLA" <?php if ($consulta[8]=="COLA") echo "selected"; ?>>COLABORADOR</option>
       </select>
