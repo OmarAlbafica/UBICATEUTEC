@@ -36,91 +36,12 @@
 <body>
 
   <!----------------------------------------------------------------->
-  <div class="container" style="margin-top: 3%; width: 100%;">
+  <div class="container" style="margin-top: 3%">
     <?php
-include("sqledificios.php");
+require_once("sqledificios.php");
 ?>
   </div>
 
-
-
-
-<!--div class="container section" >
-  <div class="row" >
-    <div class="col s3">
-  
-
-
-      <div class="card">
-        <div class="card-image">
-          <img src="../img/bj.png">
-          
-          <a href="detalleEdif.php" class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">visibility</i></a>
-        </div>
-        <div class="card-content">
-          <span class="card-title black-text"><b>Bj</b></span>
-          <p class="black-text">Edificio Benito Juárez.</p>
-        </div>
-      </div>            
-</div>
-
-    <div class="col s3">
-  
-
-
-      <div class="card">
-        <div class="card-image">
-          <img src="../img/bj.png">
-          
-          <a href="detalleEdif.php" class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">border_color</i></a>
-        </div>
-        <div class="card-content">
-          <span class="card-title black-text"><b>Bj</b></span>
-          <p class="black-text">Edificio Benito Juárez.</p>
-        </div>
-      </div>            
-</div>
-
-    <div class="col s3">
-  
-
-
-      <div class="card">
-        <div class="card-image">
-          <img src="../img/bj.png">
-          
-          <a href="detalleEdif.php" class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">border_color</i></a>
-        </div>
-        <div class="card-content">
-          <span class="card-title black-text"><b>Bj</b></span>
-          <p class="black-text">Edificio Benito Juárez.</p>
-        </div>
-      </div>            
-</div>
-
-
-    <div class="col s3">
-  
-
-
-      <div class="card">
-        <div class="card-image">
-          <img src="../img/bj.png">
-          
-          <a href="detalleEdif.php" class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">border_color</i></a>
-        </div>
-        <div class="card-content">
-          <span class="card-title black-text"><b>Bj</b></span>
-          <p class="black-text">Edificio Benito Juárez.</p>
-        </div>
-      </div>            
-</div>
-
-
-
-</div>
-</div-->
-<!----------------------------------------------------------------->
 
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>

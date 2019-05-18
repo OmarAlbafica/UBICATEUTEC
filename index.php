@@ -47,7 +47,7 @@ $(document).ready(function(){
       <!--JavaScript at end of body for optimized loading-->
       <script type="text/javascript" src="js/materialize.min.js"></script>
     <body>
-    
+  <<?php header('Location: usuario/index.php'); ?>  
 
  <div class="container" style="margin-top: 2%; width: 100%;" >
   <div class="carousel">

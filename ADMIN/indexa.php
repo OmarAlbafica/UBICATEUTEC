@@ -54,7 +54,7 @@
       <script type="text/javascript" src="js/materialize.min.js"></script>
     <body >
     
-     <div class="container" style="margin-top: -30%; width: 100%;" >
+     <div class="container" style="margin-top: -30%; min-height: 2000%;" >
   <div class="row" >
     <div class="col s12">
       <div class="divider"></div>

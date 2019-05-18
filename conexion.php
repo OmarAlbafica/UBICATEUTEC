@@ -6,6 +6,7 @@ define('DB_NAME', 'tourutec');
 
 /* Attempt to connect to MySQL database */
 $link = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
+mysqli_query ($link,"SET NAMES 'utf8'");
  
 // Check connection
 if($link === false){

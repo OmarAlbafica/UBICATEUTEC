@@ -1,4 +1,10 @@
-<footer class="page-footer pink darken-4" >
+
+<style type="text/css">
+  body {
+   margin-bottom: 30%; } 
+</style>
+<footer class="page-footer pink darken-4"  style="position:fixed;bottom:0;left:0;width:100%;">
+ 
  <div class="container">
  
     <div class="row">

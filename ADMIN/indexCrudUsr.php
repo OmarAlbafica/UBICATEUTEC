@@ -82,7 +82,7 @@
         <th style="color: blue">User</th>
         <th style="color: blue">Teléfono</th>
         <th> <a href="nuevo_user1.php"> <button type="button" class="btn btn-info">Nuevo</button> </a> </th>
-      
+        <th> <a href="vista/reporte_usuarios_pdf.php"> <button type="button" class="btn btn-info"><i class="material-icons">assignment</i>Generar Reporte</button> </a> </th>
       </thead>
       
       

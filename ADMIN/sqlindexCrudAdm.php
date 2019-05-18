@@ -1,5 +1,6 @@
 <h2 class="">Detalle de Sitios UTEC</h2>
-                        <a href="create.php" class="btn btn-info col s3 offset-s9"><i class="material-icons">create</i>  Agregar nuevo sitio</a>
+                        <a href="create.php" class="btn btn-info col s3 offset-s5"><i class="material-icons">create</i>  Agregar nuevo sitio</a>
+                        <a href="vista/reporte_sitio.php" class="btn btn-info col s3 offset-s1"><i class="material-icons">assignment</i>Generar Reporte PDF</a>
                     </div>
       <?php
                     // Include config file
@@ -60,7 +61,8 @@
 
                     <div class="">
                         <h2 class="">Detalle de Lugares UTEC</h2>
-                        
+                        <a href="vista/reporte_lugares.php" class="btn btn-info col s3 offset-s5"><i class="material-icons">assignment</i> Crear reporte de lugares</a>
+
                     </div>
       <?php
                     // Include config file

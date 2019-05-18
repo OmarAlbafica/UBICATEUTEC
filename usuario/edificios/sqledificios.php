@@ -3,10 +3,10 @@
                     Include("../../conexion.php");
                     
                     // Attempt select query execution
-                    $sql = "SELECT sitio.idsitio, sitio.sitio, sitio.tipositio, detalle.historia, detalle.anio_creacion, img.imgr, qr.nombre FROM sitio sitio
+                    $sql = "SELECT sitio.idsitio, sitio.sitio, sitio.tipositio, detalle.historia, detalle.anio_creacion  FROM sitio sitio
                     INNER JOIN detalle_sitio detalle ON sitio.idsitio = detalle.idsitio
-                    INNER JOIN imgubicate img ON sitio.idsitio = img.idsitio
-                    INNER JOIN qr qr ON sitio.idsitio = qr.idsitio";
+                    
+                   ";
                     //$sql= "SELECT * FROM sitio";
 
                    echo "<table>";
@@ -22,7 +22,7 @@ echo "<div class='row'>";
          echo "<div class='col s8 offset-s2'>";
          echo "<div class='card'>";
         echo "<div class='card-image'>";
-          echo "<img class='responsive-img' src='../".$row['imgr']."'>";
+          echo "<img class='responsive-img' src='../../".$row['imgr']."'>";
           //<img width='100' heigth='100' src=" . $row['nombre']. ">
 echo "<a href='detalleEdif.php?id=".$row['idsitio']."' class='btn-floating halfway-fab waves-effect waves-light red'><i class='material-icons'>visibility</i></a>";
         echo "</div>";
