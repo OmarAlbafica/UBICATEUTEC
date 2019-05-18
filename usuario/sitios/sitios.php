@@ -1,6 +1,7 @@
 <!DOCTYPE html>
   <html >
     <head>
+      <title>Sitios de interés</title>
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
         <!--Import Google Icon Font-->
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -11,20 +12,13 @@
         <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-      <meta charset="utf-8">
+      <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     </head>
 
 
-    <?php include("seguridad.php");
-          include("seguridadadmin.php");
-       ?>
-
-
-
-
-<?php require_once 'navadmin.php'; ?>
+<?php require_once 'nav.php';?>
 <script>
    document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.sidenav');
@@ -33,67 +27,60 @@
    $(document).ready(function(){
     $('.sidenav').sidenav();
   });
-
-  $(function(){
-      $('.carousel').carousel({
-        duration:500,
-        dist: -10,
-        shift:50,
-        padding: 50,
-        fullWidth:false,
-        indicators:true,
-        noWrap:false,
-      }
-            
-
-        );
-  });   
       
-</script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.slider');
+    var instances = M.Slider.init(elems,{
+       height: 500,
+      duration:500,
+      interval:3000,
+    });
+  });
+
+
+    </script>
       <!--JavaScript at end of body for optimized loading-->
       <script type="text/javascript" src="js/materialize.min.js"></script>
-    <body >
-    
-     <div class="container" style="margin-top: 2%; width: 100%;" >
-
-  <div class="row">
-    <div class="col l12">
-<div class="">
-
-
-
-<?php
-include("sqlindexCrudAdm.php");
-?>
-
-
-</div>
-
-
-
-
-</div>
-</div>
-
-<div class="row">
-    <div class="col l12">
-
-
-
-
-</div>
-</div>
-            
+<body>
+<!div class="container" style="margin-top: -30%; width: 100%;" >
+  <!div class="row" >
+    <!div class="col s12">
+  
+  <div class="slider">
+    <ul class="slides">
+      <li>
+        <img src="../img/museo.jpg">
+        <div class="caption center-align">
+         <a href="educacion.php"> <h3>EDUCACION</h3></a>
+        </div>
+      </li>
+      <li>
+        <img src="../img/clinica.jpg"> 
+        <div class="caption left-align">
+          <a href="salud.php"><h1>SALUD</h1></a>
+        </div>
+      </li>
+      <li>
+        <img src="../img/basket.jpg"> 
+        <div class="caption right-align">
+          <a href="recreacion.php"><h1>RECREACION</h1></a>
+        </div>
+      </li>
+    </ul>
+  </div>
+        
 
 
-</div>
-
+<!/div>
+<!/div>
+<!/div>
 
 
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
     </body>
 <?php require_once 'footer.php'; ?>
    
   </html>
-        

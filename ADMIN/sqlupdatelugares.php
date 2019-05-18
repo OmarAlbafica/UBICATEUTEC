@@ -26,7 +26,7 @@ if (isset($_POST['enviar'])) {
     $anio_lugar=$_POST['aniolugar'];
      $idsitio= $_REQUEST['id'];
 
-$sql="INSERT INTO lugares (`idlugar`, `tipo`, `nombre`, `capacidad`, `descripcion`, `planta`, `abreviatura`, `fecha_construccion`, `idsitio`,`fecha_b`,`ubicacion`) VALUES  ('$idlugar', '$tipolugar', '$nombrelugar', '$capacidad', '$desc', '$planta', '$abreviatura', '$anio_lugar', '$idsitio',CURRENT_TIME(),'$planta')";
+$sql="UPDATE INTO lugares (`idlugar`, `tipo`, `nombre`, `capacidad`, `descripcion`, `planta`, `abreviatura`, `fecha_construccion`, `idsitio`,`fecha_b`,`ubicacion`) VALUES  ('$idlugar', '$tipolugar', '$nombrelugar', '$capacidad', '$desc', '$planta', '$abreviatura', '$anio_lugar', '$idsitio',CURRENT_TIME(),'$planta')";
 mysqli_query($link,$sql);
  
  mysqli_close($link);

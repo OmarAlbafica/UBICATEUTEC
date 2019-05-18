@@ -1,6 +1,7 @@
 <!DOCTYPE html>
   <html >
     <head>
+      <title>Detalle de edificio</title>
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
         <!--Import Google Icon Font-->
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -11,89 +12,67 @@
         <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-      <meta charset="utf-8">
+      <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     </head>
 
 
-    <?php include("seguridad.php");
-          include("seguridadadmin.php");
-       ?>
-
-
-
-
-<?php require_once 'navadmin.php'; ?>
+<?php require_once 'nav.php';?>
 <script>
    document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.sidenav');
-    var instances = M.Sidenav.init(elems, options);
+    var instances = M.Sidenav.init(elems);
   });
    $(document).ready(function(){
     $('.sidenav').sidenav();
   });
+    
+      $(document).ready(function(){
+    $('.tabs').tabs();
+  });
 
-  $(function(){
-      $('.carousel').carousel({
-        duration:500,
-        dist: -10,
-        shift:50,
-        padding: 50,
-        fullWidth:false,
-        indicators:true,
-        noWrap:false,
-      }
-            
-
-        );
-  });   
-      
-</script>
+    </script>
       <!--JavaScript at end of body for optimized loading-->
       <script type="text/javascript" src="js/materialize.min.js"></script>
     <body >
     
-     <div class="container" style="margin-top: 2%; width: 100%;" >
-
+<div class="conteiner"  style="margin-top: -5%; width: 100%;" >
   <div class="row">
-    <div class="col l12">
-<div class="">
+    <div class="col s12">
+      <ul class="tabs">
+        <li class="tab col s3"><a href="#test1">Historia</a></li>
+        <li class="tab col s3"><a href="#test2">Ubicación</a></li>
+        <li class="tab col s3"><a href="#test3">Dependencias</a></li>
+      </ul>
+    </div>
+    <div id="test1" class="col s12">
+    <b><h1 class="black-text ">Historia</h1></b>
+    <?php include("historia.php"); ?>
+    </div>
 
+    <div id="test2" class="col s12">
+    <b><h1 class="black-text ">Ubicación</h1></b>
+    <p class="black-text ">
+      <?php include("ubicacion.php"); 
+      ?>
+        
+      </p>
+    </div>
 
-
-<?php
-include("sqlindexCrudAdm.php");
-?>
-
-
+    <div id="test3" class="col s12 black-text">
+     <b><h1 class="black-text ">Dependencias</h1></b>
+    <?php include("dependencias.php"); ?>
+    </div>
+  </div>
+  
 </div>
-
-
-
-
-</div>
-</div>
-
-<div class="row">
-    <div class="col l12">
-
-
-
-
-</div>
-</div>
-            
-
-
-</div>
-
-
 
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
     </body>
 <?php require_once 'footer.php'; ?>
    
   </html>
-        
