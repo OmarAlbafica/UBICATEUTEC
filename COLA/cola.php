@@ -54,7 +54,57 @@
     <body>
     
 
- <div class="container" style="margin-top: -30%; width: 100%;" >
+<div class="container section" >
+  <div class="row" >
+    <div class="col s3">
+  
+
+
+      <div class="card">
+        <div class="card-image">
+          <img src="../img/sitios.png">
+          
+          <a href="indexCrudAdm.php" class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">visibility</i></a>
+        </div>
+        <div class="card-content">
+          <span class="card-title black-text"><b>Sitios</b></span>
+          <p class="black-text">Mantenimiento</p>
+        </div>
+      </div>            
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!--div class="container section" style="margin-top: -30%; width: 100%;" >
             
 
       <div class="row" >
@@ -71,7 +121,7 @@
         </div>
           <div class="card-content">
             <span class="card-title activator grey-text text-darken-4">Sitios<i class="material-icons right">more_vert</i></span>
-              <p><a href="#">Sitios</a></p>
+              <p><a href="indexCrudAdm.php">Sitios</a></p>
           </div>
             <div class="card-reveal">
               <span class="card-title grey-text text-darken-4">Sitios<i class="material-icons right">close</i></span>
@@ -107,7 +157,7 @@
 
 
 
-</div>
+</div-->
 
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>

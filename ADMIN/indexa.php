@@ -85,7 +85,7 @@
     </div>
     <div class="card-content">
       <span class="card-title activator grey-text text-darken-4">Sitios<i class="material-icons right">more_vert</i></span>
-      <p><a href="#">Sitios</a></p>
+      <p><a href="indexCrudAdm.php">Sitios</a></p>
     </div>
     <div class="card-reveal">
       <span class="card-title grey-text text-darken-4">Sitios<i class="material-icons right">close</i></span>
@@ -93,21 +93,7 @@
     </div>
   </div>
     </div>
-    <div class="carousel-item">
-      <div class="card large">
-    <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator" src="../img/reporte.png">
-    </div>
-    <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4">Reportes<i class="material-icons right">more_vert</i></span>
-      <dir><p><a href="#">Reportes</a></p></dir>
-    </div>
-    <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">Reportes<i class="material-icons right">close</i></span>
-      <p>Here is some more information about this product that is only revealed once clicked on.</p>
-    </div>
-  </div>
-  </div>
+
   </div>
 </div>
 </div>
