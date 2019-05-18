@@ -48,22 +48,22 @@
   		<input type="text" id="nombre" name="nombre" required><br>
   		
   		<label>Apellido: </label>
-  		<input type="text" id="apellido" name="apellido"><br>
+  		<input type="text" id="apellido" name="apellido" required=""><br>
   		
   		<label>Dirección: </label>
-  		<input type="text" id="direccion" name="direccion"><br>
+  		<input type="text" id="direccion" name="direccion" required=""><br>
 
   		<label>Teléfono: </label>
   		<input type="tel" id="telefono" name="telefono" pattern="[2-9]{4}-[0-9]{4}"><br>
 
   		<label>Correo: </label>
-  		<input type="text" id="correo" name="correo"><br>
+  		<input type="text" id="correo" name="correo" required=""><br>
 
   		<label>User: </label>
-  		<input type="text" id="user" name="user"><br>
+  		<input type="text" id="user" name="user" required=""><br>
 
   		<label>Password: </label>
-  		<input type="text" id="pass" name="pass"><br>
+  		<input type="text" id="pass" name="pass" required=""><br>
 
   		<label>tipo: </label>
   		<!--input type="text" id="estado" name="estado"><br-->
